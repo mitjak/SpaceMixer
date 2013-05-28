@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SpaceMixer alpha - Create your space designs with ease</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="spectrum/spectrum.css" />        
+        <link rel="stylesheet" media="all" href="spacemixer/ui.css">
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <!--[if IE 6]> <body class="ie6 oldie no-js"> <![endif]-->
+    <!--[if IE 7]> <body class="ie7 oldie no-js"> <![endif]-->
+    <!--[if IE 8]> <body class="ie8 oldie no-js"> <![endif]-->
+    <!--[if gt IE 8]><!--> 
+    <body class="no-js en"> <!--<![endif]-->
+
+        <div class="toolbar">
+
+            <div class="holder">
+                <span class="label">Name:</span><input type="text" class="input" value="Living Room" onclick="this.select();">
+                <span class="label">Color:</span>
+                <div class="color-input"><input type='color' class='color-box' value='yellowgreen' /></div>
+                <div id="add-room" class="add button">Add Room</div>
+            </div>	
+            <div id="add-furniture" class="add button">Add Furniture</div>
+            <div id="scale">
+                <span class="label">Scale factor:</span><input type="number" class="scale" value="1.0" onclick="size();">
+            </div>
+            
+            <div class="options">
+                <span class="label">Text:</span>
+                <input class="checkbox" id="checkbox-1" type="checkbox" name="text" checked="checked"></input>
+                <label for="checkbox-1"></label>
+                
+                <span class="label">Size:</span>
+                <input class="checkbox" id="checkbox-2" type="checkbox" name="area" checked="checked"></input>
+                <label for="checkbox-2"></label>
+
+            </div>
+            
+            <div id="logo">Space<span id="logo2">Mixer<span><sup>alpha</sup></div>
+        </div>
+
+        <div class="size toggle-table" title="Details">
+            Total floor size:<span></span>
+        </div>
+        
+        <div class="details toggle-table"><ul class="table"><ul></div>
+
+        <div class="container"></div>
+        
+        <div class="mashup">
+            <div class="box" id="">	
+                <div class="title">Living room</div>
+                <div class="m2"></div>
+                <a href="#" class="edit" title="Edit"></a>	
+                <a href="#" class="delete" title="Delete"></a>
+                <div class="width"></div>
+                <div class="height"></div>
+            </div>
+        </div>          
+        
+        <div class="furniture">
+            <div class="f-element" id="">	
+                <div class="fbody">	
+                    <a href="#" class="delete" title="Delete"></a>
+                    <div class="width"></div>
+                    <div class="height"></div>
+                </div>
+            </div>
+        </div>  
+
+        <script type="text/javascript" src="script/jquery.js"></script>
+        <script type="text/javascript" src="script/jquery-ui.js"></script>
+        <script type="text/javascript" src="script/jquery.ui.resizable.snap.ext.v1.7.min.js"></script>
+        <script type="text/javascript" src="spectrum/spectrum.js"></script>    
+        <script type="text/javascript" src="spectrum/color-script.js"></script>
+        <script type="text/javascript" src="spacemixer/spacemixer.js"></script>
+    </body>
+
+</html>

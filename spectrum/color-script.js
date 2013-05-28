@@ -1,0 +1,41 @@
+$(function() {
+    $('.color-box').spectrum({
+        color: "yellowgreen",
+        //flat: true,
+        showInput: false,
+        //showInitial: false,
+        //showAlpha: false,
+        //disabled: false,
+        localStorageKey: "spectrum.fplaner0001",
+        showPalette: true,
+        showPaletteOnly: false,
+        showSelectionPalette: true,
+        clickoutFiresChange: true,
+        showButtons: false,
+        cancelText: "Cancel",
+        chooseText: "OK",
+        //className: "spectrum",
+        preferredFormat: "hex",
+        //maxSelectionSize: int,
+        palette: [[
+            "Aqua",
+            "Blue",
+            "BlueViolet",
+            "Chartreuse",
+            "Coral",
+            "Crimson",
+            "DeepPink",
+            "DeepSkyBlue",
+            "Gold",
+            "GreenYellow",
+            "LemonChiffon",
+            "LightSlateGrey",
+            "Magenta",
+            "MediumVioletRed",
+            "Purple",
+            "Silver",
+            "Yellow"
+        ]],
+        //selectionPalette: [string]
+    });
+});
